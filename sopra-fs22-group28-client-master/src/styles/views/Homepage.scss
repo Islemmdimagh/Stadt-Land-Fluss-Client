@@ -1,0 +1,21 @@
+@import 'styles/theme';
+
+.homepage {
+  &.title {
+    color: $textColor;
+    margin-bottom: 7%;
+    font-size: 20px;
+    text-align: center;
+  }
+  &.button-container {
+    display: flex;
+    width: 33%;
+    margin-left: 33%;
+    margin-top: 7%;
+  }
+  &.info-container {
+    position: absolute;
+    top: 3%;
+    margin-left: 95%;
+  }
+}

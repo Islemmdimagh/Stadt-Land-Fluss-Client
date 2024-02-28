@@ -1,0 +1,231 @@
+@import 'styles/theme';
+
+/* The '&' is a shorthand for the containing element,
+  so for example a '&.user-list' inside .game will compile to
+  .game.user-list
+
+  for more information visit https://sass-lang.com/guide
+ */
+
+.game {
+  &.container {
+    background: $background;
+    padding: 1.5em;
+    border-radius: $borderRadius;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: $dropShadow;
+  }
+  &.row-1 {
+    display: flex;
+    flex-direction: row;
+    height: 30em;
+  }
+  &.row-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  &.col-1 {
+    display: flex;
+    margin-left: 15%;
+  }
+  &.col-2 {
+    display: flex;
+    margin-left: 5%;
+  }
+  &.col-3 {
+    display: flex;
+    margin-left: 50%;
+  }
+  &.user-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  &.user-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+  }
+  &.category {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 0em;
+  }
+  &.category1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 20em;
+  }
+  &.category2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 40em;
+  }
+  &.header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0%
+  }
+  &.answer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10%;
+  }
+  &.forms {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+  }
+  & p,h2 {
+    margin: 0.5em 0;
+  }
+  &.block {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 0.75em;
+    background-color: $background;
+    margin-left: 30%;
+    margin-top: 5%;
+    border-color:black;
+    border-style:solid;
+    border-width:1px;
+    font-family:Arial, sans-serif;
+    padding:10px 5px;
+    word-break:normal;
+  }
+  &.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 300%;
+    font-size: 16px;
+    font-weight: 300;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 0.75em;
+    background-color: $background;
+  }
+  &.letter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 7em;
+    min-width: 7em;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 0.75em;
+    color: $background;
+    background-color: $button;
+    box-shadow: $dropShadow;
+    text-transform: uppercase;
+    margin-top: 75%;
+    margin-left: 50%;
+  }
+  &.round {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    max-width: 7em;
+    height: 7em;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 0.75em;
+    position: absolute;
+    margin-left: 16%;
+    top: 77%;
+  }
+  &.time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    max-width: 7em;
+    height: 7em;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 0.75em;
+    position: absolute;
+    margin-left: 47%;
+    top: 77%;
+  }
+  &.finished {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    max-width: 20em;
+    height: 20em;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-radius: 0.75em;
+    position: absolute;
+    margin-left: 76%;
+    top: 65%;
+  }
+  &.form {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 0;
+    box-sizing: border-box;
+    border-color: #04AA6D;
+    border-radius: 8px;
+  }
+  &.answers {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+  }
+  &.button {
+    display: flex;
+    width: 100%;
+  }
+  &.header {
+    display: flex;
+    flex-direction: row;
+  }
+  &.table {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  &.th {
+    border: 1px solid white;
+    border-collapse: collapse;
+    background-color: $button;
+  }
+  &.td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  &.td:empty {
+    visibility: hidden;
+    display: none;
+  }
+}
