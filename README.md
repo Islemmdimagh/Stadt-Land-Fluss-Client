@@ -1,8 +1,6 @@
 # Categories!
 Welcome to our Project *Categories!*
 
-Quick-Access: [Client](https://sopra-fs22-group28-client.herokuapp.com/) - [Server](https://sopra-fs22-group28-server.herokuapp.com/)
-
 ## Introduction
 Categories (“Stadt-Land-Fluss”) is a fun game which can be played by 2 or more players. There is an amount of rounds and some Categories which can be chosen individually. In each round a new random letter is set and every player has to find words for the specific categories which start with the given letter. As soon as a player submits all his answers for this letter the round will be closed for everyone. For each valid answer you will get a point. For the predefined categories the game will automatically validate each submitted answer. There is also the possibility for each player to vote for an invalid answer of someone else to be counted as valid in case the automatic validation is faulty. Also, the players vote for all answers submitted in custom categories. At the end all the points from each round will be added up and the 3 best players will be displayed.
 
@@ -30,29 +28,29 @@ Our main components of our frontend are the following:
 
     ## Views:
 
-    The [Homepage view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Homepage.js) is the first thing a user sees. From there he can go to the [Info view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Info.js) where he can read how the game is played. 
+    The Homepage view is the first thing a user sees. From there he can go to the Info view where he can read how the game is played. 
 
-    Or he can create a new game, which leads to the next view, the [Setup view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Setup.js). In this view the host can decide how many rounds and which categories should be played.
+    Or he can create a new game, which leads to the next view, the Setup view. In this view the host can decide how many rounds and which categories should be played.
 
     ![Setup](screenshots/Setup.png)
 
 
-    After creating a lobby, the [Lobby view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Lobby.js) gives you an invite link to send to friends, so they can join the game. New players will be sent to the [NewPlayer view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/NewPlayer.js), where they have to choose a username to join the lobby. Players already in the lobby are shown at the left side. The settings of the game can still be changed by clicking on the "settings" button, which leads to the [Settings view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Settings.js). New players can read through the game instruction by clicking on the info button which brings them to the [Info view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Info.js).
+    After creating a lobby, the Lobby view gives you an invite link to send to friends, so they can join the game. New players will be sent to the NewPlayer view, where they have to choose a username to join the lobby. Players already in the lobby are shown at the left side. The settings of the game can still be changed by clicking on the "settings" button, which leads to the Settings view. New players can read through the game instruction by clicking on the info button which brings them to the Info view.
 
     ![Lobby](screenshots/Lobby.png)
 
 
-    When the host starts the game, all players go to the [Game view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Game.js), where they see the randomly picked letter and the answer fields.
+    When the host starts the game, all players go to the Game view, where they see the randomly picked letter and the answer fields.
 
     ![Game](screenshots/Game.png)
 
 
-    If one of the players presses on the "Send Answers!" button, the round ends for everyone and they get sent to the [Result view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Result.js), where they can see the answers of the other players and can vote if an invalid answer should still get points or not.
+    If one of the players presses on the "Send Answers!" button, the round ends for everyone and they get sent to the Result view, where they can see the answers of the other players and can vote if an invalid answer should still get points or not.
 
     ![Results](screenshots/Result.png)
 
 
-    If all rounds are played, the players get sent to the [Endgame view](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/views/Endgame.js), where they see who got the most points.
+    If all rounds are played, the players get sent to the Endgame view, where they see who got the most points.
 
     ![Endgame](screenshots/Endgame.png)
 
@@ -64,14 +62,14 @@ Our main components of our frontend are the following:
 
     ## UI:
 
-    One of the important UI components is the [Button](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/ui/Button.js). The most used one is the primary button, which is used as the basic button in almost all views.
+    One of the important UI components is the Button. The most used one is the primary button, which is used as the basic button in almost all views.
 
-    The other one is the [Spinner](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/blob/master/src/components/ui/Spinner.js), which we used as a loading animation.
+    The other one is the Spinner, which we used as a loading animation.
 
 
     ## Routing:
 
-    Our two routing components are [RouteProtectors](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/tree/master/src/components/routing/routeProtectors) and [Routers](https://github.com/sopra-fs22-group28/sopra-fs22-group28-client/tree/master/src/components/routing/routers).
+    Our two routing components are RouteProtectors and Routers.
 
 
 
@@ -131,12 +129,9 @@ There are still many improvements possible to our game. Some of them are the fol
 
 ## Authors and acknowledgment
 ### Authors
-- [Timothy-Till Näscher](https://github.com/tnaescher)
-- [Witold Rozek](https://github.com/wrozek)
-- [Mohamed Islem Mdimagh](https://github.com/Islemmdimagh)
-
-### Acknowledgment
-We wanted to thank our TA [Tarek Alakmeh](https://github.com/Taremeh) for helping and bringing us through this very interesting and instructive project!
+- Timothy-Till Näscher
+- Witold Rozek
+- Mohamed Islem Mdimagh
 
 ## License
 This project is licensed under the MIT license.
