@@ -133,7 +133,7 @@ There are still many improvements possible to our game. Some of them are the fol
 ### Authors
 - [Timothy-Till Näscher](https://github.com/tnaescher)
 - [Witold Rozek](https://github.com/wrozek)
-- [Mohamed Islem Mdimagh](https://github.com/Islemuzh)
+- [Mohamed Islem Mdimagh](https://github.com/Islemmdimagh)
 
 ### Acknowledgment
 We wanted to thank our TA [Tarek Alakmeh](https://github.com/Taremeh) for helping and bringing us through this very interesting and instructive project!
